@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Class_resources</title>
+        <style>
+            .image{
+                position: relative;
+                margin:70px auto;
+                width:90%;
+                height:700px;
+            }
+            .image img{
+                opacity:0.7;
+                width:100%;
+                height:100%;
+            }
+            .para{
+                position:absolute;
+                left:0px;
+                top:350px;
+                width:100%;
+                height:35%;
+                font-size: larger;
+                text-align:center;
+            }
+            .tabs{
+                display:flex;
+                width:100%;
+                margin:0px auto;
+                justify-content: center;
+                justify-content:space-around;
+            }
+           #about, #signup, #pdf,#contact,#foot{
+                color:darksalmon;
+            }
+            .tab{
+              display:grid;
+              grid-template-columns:repeat(5,250px);
+              grid-template-rows: repeat(2,100px);
+              column-gap: 7px;
+            }
+            .tab img{
+              width:100%;
+            height:100%;
+            opacity:0.5;
+            }
+          .form{
+            display:block;
+            text-align: center;
+          }
+          a{
+            text-decoration-line:none;
+            color:black;
+          }
+          :target{
+            background-color:beige;
+          }
+          .forminside{
+            border:2px solid brown;
+            border-radius: 5px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            background-color:blanchedalmond;
+          }
+          body{
+            background-color:cornsilk;
+          }
+          #mechimg{
+            position:relative;
+            border:1px solid black;
+            border-radius: 4px;
+          }
+          #mechlink{
+            position:absolute;
+            top:48%;
+            left:30%;
+          }
+          #mathsimg{
+            position:relative;
+            border:1px solid black;
+            border-radius: 4px;
+          }
+          #mathslink{
+            position:absolute;
+            top:48%;
+            left:30%;
+          }
+          #compimg{
+            position:relative;
+            border:1px solid black;
+            border-radius: 4px;
+          }
+          #complink{
+            position:absolute;
+            top:48%;
+            left:30%;
+          }
+          #electricimg{
+            position:relative;
+            border:1px solid black;
+            border-radius: 4px;
+          }
+          #electriclink{
+            position:absolute;
+            top:48%;
+            left:30%;
+          }
+          #chemimg{
+            position:relative;
+            border:1px solid black;
+            border-radius: 4px;
+          }
+          #chemlink{
+            position:absolute;
+            top:48%;
+            left:30%;
+          }
+          nav .tabs{
+            background-color:papayawhip;
+            height:70px;
+            align-items: center;
+          }
+          footer{
+            background-color: bisque;
+          }
+          header{
+            background-color:cornsilk;
+          }
+          h1{
+            color:coral;
+            text-decoration-line:overline;
+          }
+        </style>
+    </head>
+    <body>
+      <nav>
+        <div class="tabs">
+          <h1>ClassResources</h1>
+          <a href="#para" id="about">About</a>
+          <a href="#sign" id="signup">Sign Up</a>
+          <a href="#links" id="pdf">Pdf Links</a>
+          <a href="#foot" id="contact">Contact</a>
+        </div>
+      </nav>
+       <header> 
+      <div class="image">
+        <img src="books_image.jpeg">
+        <div class="para" id="para">
+            <p><b>Hello! users we have made this application for you. It contains pdf/videos related to subject/topics you want to study like pdf of whole books, pdfs of topics.
+                
+                Why this app? - This is because generally it takes a lot of time in searching pdfs on internet. So we provide here direct links of pdfs/videos in order of preferences. Also, we request your valuable feedbacks so that we get to know what you want from us. In further addition we love to get help from your side in providing pdfs of books/topics which we have not uploaded here. We give rewards to you in exchange of this.</b></p>
+        </div>
+      </div>
+      <hr><br>
+            <div class="form" id="sign">
+              <a href="https://forms.gle/AA9SLaawCbGNrJAY6">SignUp</a>
+              <p>Or</p>
+              <form class="forminside">
+                <label for="name">User name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="birth">Date of Birth:</label>
+                <input type="date" id="date of birth" name="date"><br><br>
+                <label for="branch">Branch:</label>
+                <select>
+      
+                  <option>None</option>
+                  <option>Mechanical Engg.</option>
+                  <option>Computer Science</option>
+                  <option>Electrical Engg.</option>
+                  <option>Electronics</option>
+                  <option>Civil Engg.</option>
+      
+                </select><br><br>
+                <label for="email">Email I.D.:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd"><br><br><br>
+                <input type="button" value="Forgot Password" onclick=input type="email" value="Your registered email id:"><br><br>
+                <input type="Submit" value="Signup">
+                <input type="reset">
+              </form>
+              <br>
+            </div><br><br><hr><br>
+          <div class="tab" id="links">
+              <div id="mechimg">
+                <img src="https://th.bing.com/th/id/OIP.rHkEp5Z9iAs5Z33670tfugHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+                <div id="mechlink"><a href="#mech">Mechanical</a></div></div>  
+              <div id="mathsimg">
+                <img src="https://th.bing.com/th/id/OIP.IoRvIYdW-4tzLLohkis7XAHaDe?w=344&h=164&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+                <div id="mathslink"><a href="#maths">Mathematics</a></div></div>
+              <div id="compimg" >
+                <img src="https://th.bing.com/th?q=Programming+Language&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+                <div id="complink"><a href="#comp">Computer Science</a></div></div>
+              <div id="electricimg">
+                <img src="https://th.bing.com/th/id/OIP.j2tpjj-cbs9j57d7Ag1Y7gHaDt?w=350&h=175&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+                <div id="electriclink"><a href="#electric">Electrical</a></div></div>
+              <div id="chemimg">
+                <img src="https://th.bing.com/th?q=Chemical+Engineering+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+                <div id="chemlink"><a href="#chemical">Chemical</a></div></div>
+          </div><br><br>
+          <div id="maths"align="center"><h3>Mathematics</h3>
+            <a  target="_blank" href="https://drive.google.com/file/d/12Ho_U6q_8bspI9sF4UzLXteKt8dQCDj4/view?usp=sharing.pdf">Contemporary Abstract Algebra (10E) by Joseph A. Gallian</a>
+          </div><br><br>
+          <div id="mech"align="center"><h3>Mechanical</h3>
+            <a  target="_blank" href="https://hello.iitk.ac.in/sites/default/files/me301a21/resources/Ganesan%20-%20INTERNAL%20COMBUSTION%20ENGINES%20(2017,%20McGraw-Hill%20Education).pdf">I.C. Engines by V. Ganeshan</a>
+          </div><br><br>
+          <div id="comp"align="center"><h3>Computer Science</h3>
+            <a  target="_blank" href="https://drive.google.com/file/d/1xuA_3CUMtlzIKmZYQ6SbNspIXBUi4RQE/view?usp=sharing">Introduction to Programming Using Java by David J. Eck</a>
+          </div><br><br>
+          <div id="electric"align="center"><h3>Electrical</h3>
+            <a  target="_blank" href="https://drive.google.com/file/d/12ukvxpNWXvXS66RUYf17h2jOIE_huqh8/view?usp=sharing">Fundamentals of Electrical Engineering I by Don H. Johnson</a>
+          </div><br><br>
+          <div id="chemical" align="center"><h3>Chemical</h3>
+            <a  target="_blank" href="https://drive.google.com/file/d/11pPr_QJWi56Qccp2Hak4TYZeV3vrC7mq/view?usp=sharing">Chemical Engineering
+                Thermodynamics II by T.K. Nguyen</a>
+          </div>
+          <br><br>
+        </header><br><hr><br>
+        <footer id="foot">
+          <h3 align="center">Contact details:</h3>
+          <h4 align="center">Email: ds0324549@gmail.com</h4>
+          <h5 align="center">Mobile: 123456789</h5>
+          <h2 align="center">Made by Devansh</h2>
+        </footer>
+    </body>
+</html>
